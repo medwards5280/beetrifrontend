@@ -91,57 +91,7 @@ display: none;
 	}
 </style>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $("input[name='os']").click(function () {
-            if ($("#chkVMware").is(":checked")) {
-				$("#dvVmware").show();
-                $("#dvHyperV").hide();
-            } else if ($("#chkHyperv").is(":checked")) {
-                $("#dvVmware").hide();
-				$("#dvHyperV").show();
-            }
-        });
-    });
-</script>
-
-<form action="/configuremore" class="form-style-9" method="post">
-
-Initial Configuration Complete  <BR> Configure Another Service Profile Template ? 
-<ul>
-
-<div class="hr"><hr /></div>
-<br>
-<br>
-<li>
-  <span>Select Operting System Type?</span>
-<label for="chkYes">
-    <input type="radio" id="chkVMware" name="os" value="ESX" />
-    VMware
-</label>
-
-<label for="chkNo">
-    <input type="radio" id="chkHyperv" name="os" value="HyperV"/>
-    HyperV
-</label>
-</li>
-<div id="dvVmware" style="display: none">
-
-    <li>
-   <input  class="field-style field-full align-none" type="text" name="TemplateType" placeholder="Service Profile Template Type (Prod, Dev, Test, DMZ)">
-  </li>
-    <li>
-   <input  class="field-style field-full align-none" type="text" name="vlandata" placeholder="VLAN(s) for Data vNICs">
-  </li>
-</div>
-<li>
-
-<li>
-	<input type="submit" value="Configure UCS" />
-</li>
-</ul>
-</form>
+Test
 
 </div>
 </body>
